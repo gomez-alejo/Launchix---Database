@@ -15,8 +15,6 @@ return new class extends Migration
             $table->id('category_id');
             $table->string('name');
             $table->enum('type', ['product', 'service']); // Tipo de categoría
-            $table->boolean('products')->default(false); // Indica si hay productos
-            $table->boolean('service')->default(false); // Indica si hay servicios
             $table->timestamps();
         });
     }
