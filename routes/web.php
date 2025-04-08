@@ -13,4 +13,10 @@ Route::get('/home', function () {
     return view('inicio');
 });
 
+Route::get('/productos', function () {
+    return view('productos');
+});
+
 Route::get('/usuario',[UserController::class,'usuario'])->name('usuario');
+
+
