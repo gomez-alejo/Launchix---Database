@@ -18,6 +18,6 @@ class DatabaseSeeder extends Seeder
         
         /*$this->call(UserSeeder::class);*/
 
-        User::factory(50)->create();
+        User::factory(5)->create();
     }
 }
