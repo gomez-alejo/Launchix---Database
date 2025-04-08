@@ -294,4 +294,3 @@
   
   </main>
 @endsection
-<!-- Footer Bootstrap -->
