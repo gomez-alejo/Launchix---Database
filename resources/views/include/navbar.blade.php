@@ -17,7 +17,7 @@
         <!-- Lista de enlaces de navegación -->
         <ul class="navbar-nav me-auto">
           <!-- Enlace a la página de inicio -->
-          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('inicio')}}"><i class="fas fa-home"></i> Inicio</a></li>
           <!-- Enlace a la página de productos -->
           <li class="nav-item"><a class="nav-link" href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
           <!-- Enlace a la página de servicios -->
@@ -33,7 +33,7 @@
         <!-- Lista de enlaces de navegación alineados a la derecha -->
         <ul class="navbar-nav">
           <!-- Enlace a la página de inicio de sesión/registro -->
-          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i> Iniciar Sesión / Registro</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('users.create') }}"><i class="fas fa-user"></i> Iniciar Sesión / Registro</a></li>
         </ul>
       </div>
     </div>
