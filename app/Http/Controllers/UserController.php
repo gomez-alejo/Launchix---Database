@@ -8,10 +8,6 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-<<<<<<< HEAD
-    public function saludar(){
-        return "Hola desde el controlador UserController";
-=======
     public function create()
     {
         return view('users_create');
@@ -36,6 +32,5 @@ class UserController extends Controller
         ]);
 
         return redirect()->route('users.create')->with('success', 'User created successfully.');
->>>>>>> main
     }
 }
