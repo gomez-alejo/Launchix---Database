@@ -28,7 +28,7 @@ class OrmController extends Controller
         return $users;
     }
     public function consulta3(){
-        $payments = Payment::all();
+        $payments = Payment  ::all();
 
         return $payments;
     }
