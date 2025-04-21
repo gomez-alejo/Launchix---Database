@@ -2,6 +2,10 @@
 @section('content')
 
 <div class="container mt-4">
+@include('include.searchBar')
+</div>
+
+<div class="container mt-4">
     <div class="row" id="product-list">
       <!-- Tarjeta de Producto 1 -->
       <div class="col-md-4 mb-4 product-item" data-category="electronics">
