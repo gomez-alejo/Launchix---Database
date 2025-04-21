@@ -18,7 +18,7 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->sentence(), 
-            'type'=>$this->faker->paragraph() 
+            'type'=>$this->faker->text() 
         ];
     }
 }
