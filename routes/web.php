@@ -16,5 +16,6 @@ Route::get('/Launchix', function () {return view('inicio');})->name('inicio');
 Route::get('/registro', [UserController::class, 'create'])->name('users.create');
 Route::post('/registro', [UserController::class, 'store'])->name('users.store');
 
-Route::get('/hola', [CategoryController::class, 'hola']);
+Route::get('/consulta', [UserController::class, 'consulta'])->name('users.consulta');
+Route::get('/categories', [CategoryController::class, 'consulta'])->name('categories.consulta');
 
