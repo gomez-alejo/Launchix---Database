@@ -49,7 +49,7 @@ class User extends Authenticatable
     ];
 
         // Relaciones
-        public function entrepreneur(): HasOne
+        public function entrepreneurs(): HasOne
         {
             return $this->hasOne(Entrepreneur::class, 'user_id', 'user_id');
         }

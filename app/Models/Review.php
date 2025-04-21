@@ -16,12 +16,12 @@ class Review extends Model
     ];
 
     // Relaciones
-    public function user(): BelongsTo
+    public function users(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id', 'user_id');
     }
 
-    public function product(): BelongsTo
+    public function products(): BelongsTo
     {
         return $this->belongsTo(Product::class, 'product_id', 'product_id');
     }
