@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id('category_id');
             $table->string('name');
-            $table->enum('type', ['product', 'service']); // Tipo de categoría
+            $table->text('type', ['product', 'service']); // Tipo de categoría
             $table->timestamps();
         });
     }

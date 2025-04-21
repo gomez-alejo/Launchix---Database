@@ -2,11 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Support\Facades\App;
-
-use App\Models\User;
-
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Category;
+use App\Models\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -19,5 +18,6 @@ class DatabaseSeeder extends Seeder
         /*$this->call(UserSeeder::class);*/
 
         User::factory(5)->create();
+        Category::factory(10)->create();
     }
 }
