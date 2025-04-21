@@ -33,4 +33,10 @@ class UserController extends Controller
 
         return redirect()->route('users.create')->with('success', 'User created successfully.');
     }
+
+    public function consulta() {
+        $users = User::all();
+        return $users;
+    }
+        
 }

@@ -19,7 +19,7 @@
           <!-- Enlace a la página de inicio -->
           <li class="nav-item"><a class="nav-link" href="{{route('inicio')}}"><i class="fas fa-home"></i> Inicio</a></li>
           <!-- Enlace a la página de productos -->
-          <li class="nav-item"><a class="nav-link" href="productos.html"><i class="fas fa-box"></i> Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('productos')}}"><i class="fas fa-box"></i> Productos</a></li>
           <!-- Enlace a la página de servicios -->
           <li class="nav-item"><a class="nav-link" href="servicios.html"><i class="fas fa-concierge-bell"></i> Servicios</a></li>
           <!-- Enlace a la página de emprendimiento -->
