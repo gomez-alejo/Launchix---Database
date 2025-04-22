@@ -49,7 +49,7 @@ class User extends Authenticatable
     ];
 
         // Relaciones
-        public function entrepreneur(): HasOne
+        public function entrepreneurs(): HasOne
         {
             return $this->hasOne(Entrepreneur::class, 'user_id', 'user_id');
         }
@@ -64,7 +64,7 @@ class User extends Authenticatable
             return $this->hasMany(Review::class, 'user_id', 'user_id');
         }
     
-        public function shoppingCartItems(): HasMany
+        public function shopping_carts(): HasMany
         {
             return $this->hasMany(ShoppingCart::class, 'user_id', 'user_id');
         }

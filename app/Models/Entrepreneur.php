@@ -17,7 +17,7 @@ class Entrepreneur extends Model
     ];
 
     // Relaciones
-    public function user(): BelongsTo
+    public function users(): BelongsTo
     {
         return $this->belongsTo(User::class, 'user_id', 'user_id');
     }

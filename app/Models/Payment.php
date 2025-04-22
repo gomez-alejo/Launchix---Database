@@ -16,7 +16,7 @@ class Payment extends Model
     ];
 
     // Relaciones
-    public function order(): BelongsTo
+    public function orders(): BelongsTo
     {
         return $this->belongsTo(Order::class, 'order_id', 'order_id');
     }

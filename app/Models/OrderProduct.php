@@ -10,19 +10,18 @@ class OrderProduct extends Model
 {
     use HasFactory;
 
-    protected $table = 'order_products';
     protected $primaryKey = 'order_product_id';
     protected $fillable = [
         'quantity', 'order_id', 'product_id',
     ];
 
     // Relaciones
-    public function order(): BelongsTo
+    public function orders(): BelongsTo
     {
         return $this->belongsTo(Order::class, 'order_id', 'order_id');
     }
 
-    public function product(): BelongsTo
+    public function products(): BelongsTo
     {
         return $this->belongsTo(Product::class, 'product_id', 'product_id');
     }

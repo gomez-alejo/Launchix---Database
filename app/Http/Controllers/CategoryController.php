@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-    public function consulta (){
+    public function prueba (){
         $categories = Category::all();
         return $categories;
     }

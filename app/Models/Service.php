@@ -16,12 +16,12 @@ class Service extends Model
     ];
 
     // Relaciones
-    public function entrepreneur(): BelongsTo
+    public function entrepreneurs(): BelongsTo
     {
         return $this->belongsTo(Entrepreneur::class, 'entrepreneur_id', 'entrepreneur_id');
     }
 
-    public function category(): BelongsTo
+    public function categories(): BelongsTo
     {
         return $this->belongsTo(Category::class, 'category_id', 'category_id');
     }
