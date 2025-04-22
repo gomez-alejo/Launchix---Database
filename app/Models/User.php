@@ -64,8 +64,8 @@ class User extends Authenticatable
             return $this->hasMany(Review::class, 'user_id', 'user_id');
         }
     
-        public function shoppingCartItems(): HasMany
+        public function shopping_carts(): HasMany
         {
-            return $this->hasMany(ShoppingCart::class, 'user_id', 'user_id');
+            return $this->hasMany(Shopping_Cart::class, 'user_id', 'user_id');
         }
 }

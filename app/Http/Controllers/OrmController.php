@@ -1,70 +1,127 @@
 <?php
-
+namespace App\Models;
 namespace App\Http\Controllers;
 
+
+use App\Models\Entrepreneur;
+use App\Models\Order;
+use App\Models\Order_Product;
 use App\Models\Payment;
 use App\Models\Product;
+use App\Models\Review;
 use App\Models\Service;
+use App\Models\Shipment;
+use App\Models\Shopping_Cart;
 use App\Models\User;
 use Illuminate\Http\Request;
 
 class OrmController extends Controller
 {
-    //
-    public function consulta0(){
+    /////////////////////////////////////////
+    // Consultas individuales de cada tabla//
+    /////////////////////////////////////////
+
+    //Mostrar todos los productos
+    public function consulta1(){
         $products = Product::all();
 
         return $products;
     }
 
-    public function consulta1(){
+    //Mostrar todos los servicios
+    public function consulta2(){
         $services = Service::all();
 
         return $services;
     }
-    public function consulta2(){
+
+    //Mostrar todos los usuarios
+    public function consulta3(){
         $users = User::all();
 
         return $users;
     }
-    public function consulta3(){
+
+    //Mostrar todos los pagos
+    public function consulta4(){
         $payments = Payment  ::all();
 
         return $payments;
     }
 
-    public function consulta4(){
-        
-    }
+    //Mostrar todas las pedidos
     public function consulta5(){
         
+        $orders = Order  ::all();
+
+        return $orders;
     }
+
+    //Mostrar todos los envios
     public function consulta6(){
-        
+        $shipments = Shipment  ::all();
+
+        return $shipments;
     }
+
+    //Mostrar todas las reseñas
     public function consulta7(){
         
+        $reviews = Review  ::all();
+
+        return $reviews;
     }
+
+    //Mostrar todas las categorias
     public function consulta8(){
         
+        $categories = Review  ::all();
+
+        return $categories;
     }
+
+    //Mostrar todos los emprendedores 
     public function consulta9(){
         
+        $entrepreneurs = Entrepreneur  ::all();
+
+        return $entrepreneurs;
     }
+
+    //Mostrar todos los carros de compras
     public function consulta10(){
         
+        $shopping_carts = Shopping_Cart::all();
+
+        return $shopping_carts;
     }
+
+    //Mostrar todo pedidos_productos
     public function consulta11(){
-        
+        $orderProducts = Order_Product  ::all();
+
+        return $orderProducts;
     }
+
+    //////////////////////////////////////////
+    ////Consultas entre tablas intermedias////
+    //////////////////////////////////////////
+
     public function consulta12(){
-        
+
+        return Order::with('products')->get();
     }
+
     public function consulta13(){
-        
+        return Product::with('orders')->get();
     }
+
+      /////////////////////////////
+     ///Consultas entre tablas////
+    /////////////////////////////
+
     public function consulta14(){
-        
+        return Product::with('orders')->get();
     }
     public function consulta15(){
         
@@ -123,5 +180,6 @@ class OrmController extends Controller
     public function consulta33(){
         
     }
+    
     
 }

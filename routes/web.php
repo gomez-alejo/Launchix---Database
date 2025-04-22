@@ -1,14 +1,10 @@
 <?php
 
 use App\Http\Controllers\Controller;
-<<<<<<< HEAD
 use App\Http\Controllers\OrmController;
-=======
 use App\Http\Controllers\CategoryController;
->>>>>>> origin/main
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,7 +12,6 @@ Route::get('/', function () {
 
 Route::get('/home', function () {
     return view('inicio');
-
 })->name('inicio');
 
 Route::get('/usuario',[UserController::class,'usuario'])->name('usuario');
@@ -28,10 +23,7 @@ Route::get('/productos', function () {
 Route::get('/registro', [UserController::class, 'create'])->name('users.create');
 Route::post('/registro', [UserController::class, 'store'])->name('users.store');
 
-<<<<<<< HEAD
-Route::get('/consulta1', [OrmController::class, 'consulta1']);
-=======
-Route::get('/consulta', [UserController::class, 'consulta'])->name('users.consulta');
+Route::get('/consulta13', [OrmController::class, 'consulta13']);
+Route::get('/prueba', [UserController::class, 'prueba'])->name('users.prueba');
 Route::get('/categories', [CategoryController::class, 'consulta'])->name('categories.consulta');
 
->>>>>>> origin/main
