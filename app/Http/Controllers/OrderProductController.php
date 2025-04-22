@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class OrderProductController extends Controller
 {
-    //
+    public function saludo() {
+        return 'Hola desde orden producto';
+    }
 }
