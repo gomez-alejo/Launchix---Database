@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ShoppingCart extends Model
+class Shopping_Cart extends Model
 {
     use HasFactory;
-
+    protected $table= 'shopping_carts';
     protected $primaryKey = 'shopping_cart_id';
     protected $fillable = [
         'quantity', 'user_id', 'product_id',

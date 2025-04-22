@@ -23,6 +23,14 @@ Route::get('/productos', function () {
 Route::get('/registro', [UserController::class, 'create'])->name('users.create');
 Route::post('/registro', [UserController::class, 'store'])->name('users.store');
 
-Route::get('/consulta1', [OrmController::class, 'consulta1']);
+
+
+
+
+
+
+Route::get('/consulta13', [OrmController::class, 'consulta13']);
 Route::get('/prueba', [UserController::class, 'prueba'])->name('users.prueba');
 Route::get('/categories', [CategoryController::class, 'consulta'])->name('categories.consulta');
+
+
