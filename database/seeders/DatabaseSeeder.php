@@ -8,7 +8,6 @@ use App\Models\Category;
 use App\Models\Entrepreneur;
 use App\Models\User;
 use App\Models\Order;
-use App\Models\Order_Product;
 use App\Models\OrderProduct;
 use App\Models\Payment;
 use App\Models\Product;
@@ -32,17 +31,17 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        User::factory(10)->create();
-        Category::factory(10)->create();
-        Shipment::factory()->count(10)->create();
-        Payment::factory()->count(10)->create();
-        Entrepreneur::factory()->count(10)->create();
-        Review::factory()->count(7)->create();
-        Order::factory()->count(10)->create();
-        Product::factory()->count(10)->create();
-        OrderProduct::factory()->count(10)->create();
-        Service::factory()->count(10)->create();
-        ShoppingCart::factory()->count(10)->create();
+        User::factory(5)->create();
+        Category::factory(5)->create();
+        Shipment::factory()->count(5)->create();
+        Payment::factory()->count(5)->create();
+        Entrepreneur::factory()->count(5)->create();
+        Review::factory()->count(5)->create();
+        Order::factory()->count(5)->create();
+        Product::factory()->count(5)->create();
+        OrderProduct::factory()->count(5)->create();
+        Service::factory()->count(5)->create();
+        ShoppingCart::factory()->count(5)->create();
 
     }
 }
