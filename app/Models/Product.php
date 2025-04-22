@@ -40,7 +40,7 @@ class Product extends Model
 
     public function orderProducts(): HasMany
     {
-        return $this->hasMany(Order_Product::class, 'product_id', 'product_id');
+        return $this->hasMany(OrderProduct::class, 'product_id', 'product_id');
     }
 
     public function reviews(): HasMany
@@ -50,7 +50,7 @@ class Product extends Model
 
     public function shopping_carts(): HasMany
     {
-        return $this->hasMany(Shopping_Cart::class, 'product_id', 'product_id');
+        return $this->hasMany(ShoppingCart::class, 'product_id', 'product_id');
     }
 
 }

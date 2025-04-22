@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Entrepreneur;
 use App\Models\Order;
-use App\Models\Order_Product;
+use App\Models\OrderProduct;
 use App\Models\Payment;
 use App\Models\Product;
 use App\Models\Review;
 use App\Models\Service;
 use App\Models\Shipment;
-use App\Models\Shopping_Cart;
+use App\Models\ShoppingCart;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -91,14 +91,14 @@ class OrmController extends Controller
     //Mostrar todos los carros de compras
     public function consulta10(){
         
-        $shopping_carts = Shopping_Cart::all();
+        $shopping_carts = ShoppingCart::all();
 
         return $shopping_carts;
     }
 
     //Mostrar todo pedidos_productos
     public function consulta11(){
-        $orderProducts = Order_Product  ::all();
+        $orderProducts = OrderProduct  ::all();
 
         return $orderProducts;
     }
