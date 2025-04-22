@@ -29,7 +29,7 @@ Route::post('/registro', [UserController::class, 'store'])->name('users.store');
 
 
 
-Route::get('/consulta13', [OrmController::class, 'consulta13']);
+Route::get('/consulta5', [OrmController::class, 'consulta5']);
 Route::get('/prueba', [UserController::class, 'prueba'])->name('users.prueba');
 Route::get('/categories', [CategoryController::class, 'consulta'])->name('categories.consulta');
 
