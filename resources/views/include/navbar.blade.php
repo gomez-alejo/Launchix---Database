@@ -3,7 +3,7 @@
     <!-- Contenedor principal de la barra de navegación -->
     <div class="container">
       <!-- Logo de la página -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#inicio">
         <i class="fas fa-store"></i> Launchix <!-- Icono y nombre del sitio -->
       </a>
   

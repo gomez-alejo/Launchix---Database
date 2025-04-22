@@ -1,7 +1,7 @@
 <!-- Barra de Navegación -->
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{route('inicio')}}">
         <i class="fas fa-store"></i> Launchix
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -15,7 +15,7 @@
           <li class="nav-item"><a class="nav-link" href="emprendimieto.html"><i class="fas fa-lightbulb"></i> Emprendimiento</a></li>
         </ul>
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="login.html"><i class="fas fa-user"></i> Iniciar Sesión / Registro</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('users.create')}}"><i class="fas fa-user"></i> Iniciar Sesión / Registro</a></li>
           <li class="nav-item cart-icon" onclick="toggleCartDropdown()">
             <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
             <span id="cart-count" class="cart-count">0</span>
