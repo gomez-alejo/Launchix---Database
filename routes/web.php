@@ -11,6 +11,7 @@ Route::get('/', function () {
 });
 
 Route::get('/Launchix', function () {return view('inicio');})->name('inicio');
+Route::get('/Products', function () {return view('products');})->name('productos');
 
 
 Route::get('/registro', [UserController::class, 'create'])->name('users.create');
